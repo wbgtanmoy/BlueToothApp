@@ -49,8 +49,7 @@ public class MainActivity extends Activity {
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
                 mDeviceList.add(device.getName() + "\n\n" + device.getAddress());
                 Log.i("BT", device.getName() + "\n\n" + device.getAddress());
-                listView.setAdapter(new ArrayAdapter<String>(context,
-                        android.R.layout.simple_list_item_1, mDeviceList));
+                listView.setAdapter(new ArrayAdapter<String>(context,android.R.layout.simple_list_item_1, mDeviceList));
             }
         }
     };
