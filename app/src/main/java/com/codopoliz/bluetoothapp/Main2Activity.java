@@ -93,7 +93,7 @@ public class Main2Activity extends  AppCompatActivity {
         public void onScanResult(int callbackType, ScanResult result) {
             peripheralTextView.append("Device Name: " + result.getDevice().getName() + " rssi: " + result.getRssi() + "\n");
 
-            // auto scroll for text view
+            // ------------------this is automatic scroll for textview--------------
             final int scrollAmount = peripheralTextView.getLayout().getLineTop(peripheralTextView.getLineCount()) - peripheralTextView.getHeight();
             // if there is no need to scroll, scrollAmount will be <=0
             if (scrollAmount > 0)
