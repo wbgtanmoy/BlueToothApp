@@ -71,6 +71,7 @@ public class Main2Activity extends  AppCompatActivity {
             startActivityForResult(enableIntent,REQUEST_ENABLE_BT);
         }
 
+        // ---------this is a test
         // Make sure we have access coarse location enabled, if not, prompt the user to enable it
         if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
